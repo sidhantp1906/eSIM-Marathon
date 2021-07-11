@@ -1,0 +1,30 @@
+* C:\esim\FOSSEE\eSim\Examples\jktod\jktod.cir
+
+* EESchema Netlist Version 1.1 (Spice format) creation date: 6/21/2021 12:22:02 PM
+
+* To exclude a component from the Spice Netlist add [Spice_Netlist_Enabled] user FIELD set to: N
+* To reorder the component spice node sequence add [Spice_Node_Sequence] user FIELD and define sequence: 2,1,0
+
+* Sheet Name: /
+X1  Net-_U1-Pad3_ Net-_U6-Pad2_ Net-_U1-Pad4_ Net-_U4-Pad1_ 3_and		
+X2  Net-_U1-Pad4_ Net-_U11-Pad2_ Net-_U6-Pad3_ Net-_U5-Pad1_ 3_and		
+U4  Net-_U4-Pad1_ Net-_U4-Pad2_ d_inverter		
+U5  Net-_U5-Pad1_ Net-_U5-Pad2_ d_inverter		
+U6  Net-_U4-Pad2_ Net-_U6-Pad2_ Net-_U6-Pad3_ d_nand		
+U7  Net-_U6-Pad3_ Net-_U5-Pad2_ Net-_U6-Pad2_ d_nand		
+M2  Net-_M1-Pad1_ Din VDD VDD mosfet_p		
+M1  Net-_M1-Pad1_ Din GND GND mosfet_n		
+U1  Din clk Net-_U1-Pad3_ Net-_U1-Pad4_ adc_bridge_2		
+U8  Net-_U6-Pad3_ Net-_U6-Pad2_ Qout Qnout dac_bridge_2		
+R2  Qout GND 1k		
+R1  Qnout GND 1k		
+v2  clk GND pulse		
+U10  Qout plot_v1		
+U9  Qnout plot_v1		
+U11  Net-_M1-Pad1_ Net-_U11-Pad2_ adc_bridge_1		
+U2  Din plot_v1		
+U3  clk plot_v1		
+v1  VDD GND 5		
+v3  Din GND pulse		
+
+.end
