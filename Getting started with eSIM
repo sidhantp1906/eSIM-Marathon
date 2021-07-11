@@ -1,0 +1,9 @@
+1)download and install eSIM from official website of eSIM-FOSSEE. 
+2)open eSIM and click on NEW PROJECT/OPEN PROJECT on upper left side of toolbar.
+3)to browse the examples click on OPEN PROJECT and select any of the file under EXAMPLE folder of eSIM.
+4)after clicking on NEW PROJECT give the name for project without space.
+5)click on OPEN SCHEMATIC from left toolbar and create the circuit using COMPONENTS.
+6)ANOTATE the circuit and then click on ERC and then click on GENERATE NETLIST.
+7)exit the circuit page and comeback to main window of eSIM.
+8)click on CONVERT KICAD TO NGSPICE and fill the transient response values and other relevant fields.
+9)click on SIMULATION and check the outputs. 
